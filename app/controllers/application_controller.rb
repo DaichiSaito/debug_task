@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   def require_login
     if !current_user.nil?
-      redirect_to new_session_path, alert: 'ログインしてください' unless current_user
+      redirect_to new_session_path, alert: 'ログインしてください'
     end
   end
 end
